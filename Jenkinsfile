@@ -1,7 +1,7 @@
 pipeline {
   agent any
 
-  stage {
+  stages {
     stage ('Build') {
       steps {
         echo 'Building my forst code...'
