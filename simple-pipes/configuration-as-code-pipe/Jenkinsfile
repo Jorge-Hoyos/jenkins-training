@@ -1,0 +1,32 @@
+pipeline {
+   agent any
+   stages {
+      stage ("Matrix") {
+         matrix {
+            axes {
+               axis {
+                  name 'Platform'
+                  values 'linux', 'mac', 'windows'
+               }
+            }
+            stages {
+               stage ("builds") {
+                  steps {
+                     echo "Building"
+                  }
+               }
+               stage ("test") {
+                  steps {
+                     echo "testing"
+                  }
+               }
+               stage ("deploy") {
+                  steps {
+                     echo "deploying"
+                  }
+               }
+            }
+         }
+      }
+   }
+}
