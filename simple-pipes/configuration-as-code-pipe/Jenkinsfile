@@ -1,10 +1,10 @@
 pipeline {
-   agent any
-   stages {
-      stage ("Matrix") {
-         matrix {
-            axes {
-               axis {
+  agent any
+  stages {
+    stage ("Matrix") {
+      matrix {
+        axes {
+          axis {
                   name 'Platform'
                   values 'linux', 'mac', 'windows'
                }
