@@ -1,5 +1,9 @@
 job('training/dsl/first_created_dsl_job_from_scm'){
-  steps {
-    shell('echo hello world!')
+  stages{
+    stage('first'){
+      steps {
+        shell('echo hello world!')
+      }
+    }
   }
 }
