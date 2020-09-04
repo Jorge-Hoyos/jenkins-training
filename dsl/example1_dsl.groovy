@@ -1,5 +1,5 @@
 /* groovylint-disable CompileStatic */
-String basePath = 'job-as-code/example1'
+String basePath = 'training/dsl/job-as-code/example1'
 String repo = 'https://github.com/Jorge-Hoyos/jenkins-training.git'
 String gitHubKey = 'persona-github-hey'
 
