@@ -11,4 +11,3 @@ folder ('projects/project-a') {
   description ('folder for project a')
 }
 
-folder ('other')
