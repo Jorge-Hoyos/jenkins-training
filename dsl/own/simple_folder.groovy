@@ -10,3 +10,5 @@ folder ('projects/project-a') {
   displayName (folderA)
   description ('folder for project a')
 }
+
+folder ('other')
