@@ -1,4 +1,4 @@
-String myFolder = 'my-examples'
+String myFolder = 'dsl/my-examples'
 
 folder (myFolder) {
   displayName ('Folder A')
