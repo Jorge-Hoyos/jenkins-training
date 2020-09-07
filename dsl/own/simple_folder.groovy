@@ -1,6 +1,6 @@
-String myFolder = 'dsl/my-examples'
+String myFolder = 'dsl'
 
 folder (myFolder) {
-  displayName ('Folder A')
+  displayName ('dsl')
   description ('folder for project a')
 }
