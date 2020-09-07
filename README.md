@@ -1,3 +1,3 @@
 # github url
 
-<https://github.com/Jorge-Hoyos/jenkins-training.git>
+https://github.com/Jorge-Hoyos/jenkins-training.git

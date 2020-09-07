@@ -1,4 +1,4 @@
-String folder = 'my-examples'
+//String folder = 'my-examples'
 
 folder ('folder-a') {
   displayName ('Folder A')
