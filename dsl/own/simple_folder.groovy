@@ -6,7 +6,7 @@ folder (myFolder) {
   description ('folder for all projects')
 }
 
-folder (myFolder'/'folderA) {
+folder ('projects/project-a') {
   displayName (folderA)
   description ('folder for project a')
 }
