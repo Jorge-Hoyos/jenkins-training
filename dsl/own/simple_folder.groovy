@@ -1,6 +1,6 @@
-//String folder = 'my-examples'
+String myFolder = 'my-examples'
 
-folder ('folder-a') {
+folder (myFolder) {
   displayName ('Folder A')
   description ('folder for project a')
 }
