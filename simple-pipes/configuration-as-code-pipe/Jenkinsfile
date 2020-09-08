@@ -1,7 +1,7 @@
 pipeline {
   agent any
   stages {
-    stage ("Matrix") {
+    stage ('Matrix') {
       matrix {
         axes {
           axis {
@@ -10,19 +10,19 @@ pipeline {
                }
             }
             stages {
-               stage ("builds") {
+               stage ('builds') {
                   steps {
-                     echo "Building"
+                     echo 'Building'
                   }
                }
-               stage ("test") {
+               stage ('test') {
                   steps {
-                     echo "testing"
+                     echo 'testing'
                   }
                }
-               stage ("deploy") {
+               stage ('deploy') {
                   steps {
-                     echo "deploying"
+                     echo 'deploying'
                   }
                }
             }

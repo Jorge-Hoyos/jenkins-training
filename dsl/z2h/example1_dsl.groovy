@@ -1,4 +1,3 @@
-/* groovylint-disable CompileStatic */
 String basePath = 'training/dsl/zero-2-hero-examples/example1'
 String repo = 'https://github.com/Jorge-Hoyos/jenkins-training.git'
 String gitHubKey = 'persona-github-hey'
