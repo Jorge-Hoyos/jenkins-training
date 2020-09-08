@@ -3,7 +3,6 @@ String folderA = 'project-a'
 String folderB = 'project-b'
 
 folder (myFolder) {
-  displayName (myFolder)
   description ('folder for all projects')
 }
 
