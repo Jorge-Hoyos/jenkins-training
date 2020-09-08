@@ -1,4 +1,4 @@
-String myFolder = 'projects'
+String myFolder = 'training/projects'
 String folderA = 'project-a'
 String folderB = 'project-b'
 
