@@ -1,5 +1,5 @@
 job ('terraform-pipeline') {
   steps {
-    shell ('terraform version')
+    shell ('terraform init')
   }
 }
