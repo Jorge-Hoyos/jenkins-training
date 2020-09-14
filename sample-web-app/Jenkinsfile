@@ -1,13 +1,9 @@
 #!/usr/bin/env groovy
 
-@Library('shared-library@master') _ //master or whatever branch
+@Library('shared-library@master') _
 
 pipeline {
-  agent {
-    docker {
-      image 'mave'
-      args '-v $HOME/.m2:/root/.m2'
-    }
+  agent any
   }
   stages {
     stage ('maven build') {
@@ -17,10 +13,10 @@ pipeline {
         }
       }
     }
-    stage ('check logs'){
-      steps {
-        filterLogs ( 'WARNING', 1)
-      }
-    }
+    // stage ('check logs') {
+    //   steps {
+    //     filterLogs ( 'WARNING', 1)
+    //   }
+    // }
   }
 }
