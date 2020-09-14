@@ -1,6 +1,6 @@
 @Library('shared-library@master') _
 
-myNamePipeline {
+my_name_pipeline {
 
   name = 'Jorge'
   age = 27
