@@ -6,16 +6,9 @@ pipeline {
   agent any
 
   stages {
-    stage ('maven build') {
+    stage ('print my name') {
       steps {
-        script {
-          sh 'echo mv clean install'
-        }
-      }
-    }
-    stage ('check logs') {
-      steps {
-        filterLogs ( 'WARNING', 1)
+        name ( 'jorge', 27)
       }
     }
   }
