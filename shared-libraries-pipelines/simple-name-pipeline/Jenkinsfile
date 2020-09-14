@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage ('print my name') {
       steps {
-        myName ( 'jorge', 27)
+        myName ('jorge', 27)
       }
     }
   }

@@ -1,0 +1,8 @@
+@Library('shared-library@master') _
+
+myNamePipeline {
+
+  name = 'Jorge'
+  age = 27
+
+}
