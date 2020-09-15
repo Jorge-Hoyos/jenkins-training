@@ -1,6 +1,6 @@
 String pipelinePath = 'training/dsl/my-pipelines/generated/slack-notificaction-pipeline'
 
-job ("${pipelinePath}") {
+multiJob ("${pipelinePath}") {
   steps {
     shell ('echo algo')
   }
