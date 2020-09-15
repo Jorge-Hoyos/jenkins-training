@@ -7,7 +7,7 @@ folder (simpleFolderPath)
 
 folder (complexFolderPath)
 
-pipelineJob ("${simpleFolderPath}/my_name_pipeline") {
+pipelineJob ("${simpleFolderPath}/my_name_pipeline_step") {
   definition {
     cpsScm {
       scm {
@@ -21,6 +21,24 @@ pipelineJob ("${simpleFolderPath}/my_name_pipeline") {
       }
       lightweight()
       scriptPath('shared-libraries-pipelines/simple-name-pipeline/Jenkinsfile')
+    }
+  }
+}
+
+pipelineJob ("${complexFolderPath}/my_name_pipeline") {
+  definition {
+    cpsScm {
+      scm {
+        git {
+          remote {
+            url ("${repo}")
+            credentials ("${gitHubKey}")
+          }
+          branches ('master')
+        }
+      }
+      lightweight()
+      scriptPath('shared-libraries-pipelines/complex-pipelines/Jenkinsfile')
     }
   }
 }
