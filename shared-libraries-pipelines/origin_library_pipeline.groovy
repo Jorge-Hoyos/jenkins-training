@@ -7,7 +7,7 @@ folder (simpleFolderPath)
 
 folder (complexFolderPath)
 
-job ("${simpleFolderPath}/name_name") {
+pipelineJob ("${simpleFolderPath}/my_name_pipeline") {
   definition {
     cpScm {
       scm {
