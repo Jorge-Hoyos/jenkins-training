@@ -5,28 +5,28 @@ pipeline {
       matrix {
         axes {
           axis {
-                  name 'Platform'
-                  values 'linux', 'mac', 'windows'
-               }
+            name 'Platform'
+            values 'linux', 'mac', 'windows'
+          }
+        }
+        stages {
+          stage ('builds') {
+            steps {
+              echo 'Building'
             }
-            stages {
-               stage ('builds') {
-                  steps {
-                     echo 'Building'
-                  }
-               }
-               stage ('test') {
-                  steps {
-                     echo 'testing'
-                  }
-               }
-               stage ('deploy') {
-                  steps {
-                     echo 'deploying'
-                  }
-               }
+          }
+          stage ('test') {
+            steps {
+              echo 'testing'
             }
-         }
+          }
+          stage ('deploy') {
+            steps {
+              echo 'deploying'
+            }
+          }
+        }
       }
-   }
+    }
+  }
 }
