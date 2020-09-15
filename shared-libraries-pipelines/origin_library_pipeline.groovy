@@ -9,7 +9,7 @@ folder (complexFolderPath)
 
 pipelineJob ("${simpleFolderPath}/my_name_pipeline") {
   definition {
-    cpScm {
+    cpsScm {
       scm {
         git {
           remote {
