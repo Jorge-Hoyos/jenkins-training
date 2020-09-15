@@ -2,9 +2,14 @@ String myFolder = 'training/projects'
 String folderA = 'project-a'
 String folderB = 'project-b'
 String generatedFolderPath = 'training/dsl/my-pipelines/generated'
+String originFolderPath = 'training/dsl/my-pipelines/origin'
 
 folder (generatedFolderPath) {
   description ('folder for dsl generated pipelines')
+}
+
+folder (originFolderPath) {
+  description ('folder for dsl origin pipelines')
 }
 
 folder (myFolder) {
