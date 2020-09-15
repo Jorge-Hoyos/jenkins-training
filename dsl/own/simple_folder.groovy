@@ -3,6 +3,9 @@ String folderA = 'project-a'
 String folderB = 'project-b'
 String generatedFolderPath = 'training/dsl/my-pipelines/generated'
 String originFolderPath = 'training/dsl/my-pipelines/origin'
+String sharedLibrary = 'training/shared-library'
+
+folder ("${sharedLibrary}")
 
 folder (generatedFolderPath) {
   description ('folder for dsl generated pipelines')
