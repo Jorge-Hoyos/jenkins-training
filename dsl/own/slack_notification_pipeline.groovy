@@ -5,7 +5,7 @@ job ("${pipelinePath}") {
     shell ('echo algo')
   }
   configure { project ->
-    project / publishers << 'jenkins.plugins.slack.SlackNotifier plugin="slack@2.42"' {
+    project / publishers << 'jenkins.plugins.slack.SlackNotifier' {
       startNotification(true)
       notifySuccess(true)
       notifyAborted(true)
