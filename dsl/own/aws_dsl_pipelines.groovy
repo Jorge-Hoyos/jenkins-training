@@ -1,5 +1,5 @@
 String scriptPath = 'dsl/own/scripts/aws-script.sh'
-pipelinePath = 'training/dsl/my-pipelines/generated'
+pipelinePath = 'training/dsl/my-pipelines/generated/aws-pipeline'
 
 job ("${pipelinePath}") {
   steps {
