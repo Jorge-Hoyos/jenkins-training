@@ -1,5 +1,5 @@
 String scriptPath = 'dsl/own/scripts/aws-script.sh'
-folderPath = 'training/dsl/my-pipelines/generated'
+String folderPath = 'training/dsl/my-pipelines/generated'
 
 folder (folderPath)
 
