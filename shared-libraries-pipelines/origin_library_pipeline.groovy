@@ -20,7 +20,7 @@ pipelineJob ("${simpleFolderPath}/my_name_pipeline") {
         }
       }
       lightweight()
-      scriptPath('simple-pipes/pipe-as-code/Jenkinsfile')
+      scriptPath('shared-libraries-pipelines/simple-name-pipeline/Jenkinsfile')
     }
   }
 }
