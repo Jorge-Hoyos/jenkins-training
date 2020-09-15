@@ -1,6 +1,6 @@
 #!/usr/bin/env groovy
 
-@Library('shared-library@master') _
+@Library('shared-library@master') myLibrary
 
 pipeline {
   agent any
