@@ -1,5 +1,5 @@
 1.times {
-  job("training/dsl/my-pipelines/first_created_dsl_job_from_scm${it}") {
+  job("training/dsl/my-pipelines/generated/first_created_dsl_job_from_scm${it}") {
     triggers {
       upstream ('dsl_pipeline_git_code', 'SUCCESS')
     }
