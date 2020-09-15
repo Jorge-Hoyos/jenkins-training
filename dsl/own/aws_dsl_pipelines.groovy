@@ -1,7 +1,9 @@
 String scriptPath = 'dsl/own/scripts/aws-script.sh'
-pipelinePath = 'training/dsl/my-pipelines/generated/aws-pipeline'
+folderPath = 'training/dsl/my-pipelines/generated'
 
-job ("${pipelinePath}") {
+folder ("${folderPath}")
+
+job ("${folderPath}/aws-pipeline") {
   steps {
     shell (readFileFromWorkspace(scriptPath))
   }
