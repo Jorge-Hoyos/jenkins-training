@@ -25,6 +25,9 @@
         "NoDef": {
             "enabled": false
         },
+        "NoWildcardImports": {
+            "enabled": false
+        },
         "UnusedVariable": {
             "enabled": false
         },
