@@ -11,8 +11,15 @@ if(!(jenkins.getSecurityRealm() instanceof HudsonPrivateSecurityRealm))
 if(!(jenkins.getAuthorizationStrategy() instanceof GlobalMatrixAuthorizationStrategy))
   jenkins.setAuthorizationStrategy(new GlobalMatrixAuthorizationStrategy())
 
+// slave to master access control
 Jenkins.instance.getInjector().getInstance(AdminWhitelistRule.class)
 .setMasterKillSwitch(false)
+
+// Load Jenkins root URL
+jlc = JenkinsLocationConfiguration.get()
+jlc.setUrl("http://${env.MY_IP}:8080/")
+println(jlc.getUrl())
+jlc.save()
 
 def user = jenkins.getSecurityRealm().createAccount(env.JENKINS_USER, env.JENKINS_PASS)
 user.save()
