@@ -2,6 +2,7 @@ String simpleFolderPath = 'training/shared-library/simple-pipelines'
 String complexFolderPath = 'training/shared-library/complex-pipelines'
 String repo = 'https://github.com/Jorge-Hoyos/jenkins-training.git'
 String gitHubKey = 'persona-github-hey'
+String branch = 'master'
 
 folder (simpleFolderPath)
 
@@ -16,7 +17,7 @@ pipelineJob ("${simpleFolderPath}/my_name_pipeline_step") {
             url ("${repo}")
             credentials ("${gitHubKey}")
           }
-          branches ('master')
+          branches ("${branch}")
         }
       }
       lightweight()
@@ -34,7 +35,7 @@ pipelineJob ("${complexFolderPath}/my_name_pipeline") {
             url ("${repo}")
             credentials ("${gitHubKey}")
           }
-          branches ('master')
+          branches ("${branch}")
         }
       }
       lightweight()
