@@ -71,13 +71,3 @@ matrix-auth
 pam-auth
 ldap
 email-ext
-blueocean
-mapdb-api
-subversion
-authentication-tokens
-docker-commons
-docker-workflow
-docker-java-api
-docker-plugin
-role-strategy
-authorize-project
