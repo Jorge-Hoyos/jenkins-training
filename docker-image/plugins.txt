@@ -1,4 +1,4 @@
-
+authorize-project
 trilead-api
 cloudbees-folder
 antisamy-markup-formatter
@@ -57,7 +57,6 @@ authentication-tokens
 docker-commons
 docker-workflow
 pipeline-stage-tags-metadata
-pipeline-model-declarative-agent
 pipeline-model-definition
 lockable-resources
 workflow-aggregator
@@ -75,3 +74,4 @@ ldap
 email-ext
 docker-java-api
 docker-plugin
+role-strategy

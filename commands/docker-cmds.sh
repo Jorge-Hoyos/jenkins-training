@@ -1,5 +1,6 @@
 docker pull jenkins/jenkins:lts
 docker build -t jorge:latest .
+docker run -p 8080:8080 -v jenkins_data:/var/jenkins_home jenkins/jenkins:lts
 docker run -p 8080:8080 -d --name jorge -u root --mount source=jenkins_data,target=/var/jenkins_home jorge:latest
 docker run -p 8080:8080 -d --name jenkins -u root --mount source=jenkins_data,target=/var/jenkins_home jenkins/jenkins:lts
 docker volume list
