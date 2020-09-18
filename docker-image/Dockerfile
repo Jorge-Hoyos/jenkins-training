@@ -13,7 +13,7 @@ RUN usermod -a -G docker jenkins
 
 # install aws v2
 RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64-2.0.30.zip" -o "awscliv2.zip" \
-  && unzip awscliv2.zip\
+  && unzip -q awscliv2.zip\
   && ./aws/install
 
 USER jenkins
