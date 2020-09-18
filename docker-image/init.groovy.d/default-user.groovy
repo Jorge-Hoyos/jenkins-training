@@ -5,11 +5,13 @@ import jenkins.security.s2m.AdminWhitelistRule
 def env = System.getenv()
 
 def jenkins = Jenkins.getInstance()
-if(!(jenkins.getSecurityRealm() instanceof HudsonPrivateSecurityRealm))
+if (!(jenkins.getSecurityRealm() instanceof HudsonPrivateSecurityRealm)) {
   jenkins.setSecurityRealm(new HudsonPrivateSecurityRealm(false))
+}
 
-if(!(jenkins.getAuthorizationStrategy() instanceof GlobalMatrixAuthorizationStrategy))
+if (!(jenkins.getAuthorizationStrategy() instanceof GlobalMatrixAuthorizationStrategy)) {
   jenkins.setAuthorizationStrategy(new GlobalMatrixAuthorizationStrategy())
+}
 
 // slave to master access control
 Jenkins.instance.getInjector().getInstance(AdminWhitelistRule.class)

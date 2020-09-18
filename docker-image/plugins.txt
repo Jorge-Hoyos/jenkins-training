@@ -81,3 +81,4 @@ docker-java-api
 docker-plugin
 role-strategy
 authorize-project
+scriptler

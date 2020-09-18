@@ -13,6 +13,9 @@
         "ImplicitClosureParameter": {
             "enabled": false
         },
+        "Instanceof": {
+            "enabled": false
+        },
         "MethodParameterTypeRequired": {
             "enabled": false
         },
@@ -26,6 +29,15 @@
             "enabled": false
         },
         "NoWildcardImports": {
+            "enabled": false
+        },
+        "UnnecessaryDotClass": {
+            "enabled": false
+        },
+        "UnnecessaryGetter": {
+            "enabled": false
+        },
+        "UnnecessarySetter": {
             "enabled": false
         },
         "UnusedVariable": {
