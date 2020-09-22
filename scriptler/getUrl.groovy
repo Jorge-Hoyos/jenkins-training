@@ -1,5 +1,5 @@
-import jenkins.model.*
+import jenkins.model.JenkinsLocationConfiguration
 
 jlc = JenkinsLocationConfiguration.get()
-println(jlc.getUrl())
+println(jlc.url)
 jlc.save()

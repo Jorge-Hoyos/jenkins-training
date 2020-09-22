@@ -18,14 +18,14 @@ def strategyMap = [
 
 def authenticators = QueueItemAuthenticatorConfiguration.get().getAuthenticators()
 def configureProjectAuthenticator = true
-for(authenticator in authenticators) {
-  if(authenticator instanceof ProjectQueueItemAuthenticator) {
+for (authenticator in authenticators) {
+  if (authenticator instanceof ProjectQueueItemAuthenticator) {
     // only add if it does not already exist
     configureProjectAuthenticator = false
   }
 }
 
-if(configureProjectAuthenticator) {
+if (configureProjectAuthenticator) {
   authenticators.add(new ProjectQueueItemAuthenticator(strategyMap))
 }
 

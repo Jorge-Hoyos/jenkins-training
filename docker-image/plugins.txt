@@ -82,3 +82,4 @@ docker-plugin
 role-strategy
 authorize-project
 scriptler
+slack
