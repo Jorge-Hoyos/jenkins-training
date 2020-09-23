@@ -5,11 +5,15 @@ import org.jenkinsci.plugins.plaincredentials.impl.StringCredentialsImpl
 import jenkins.plugins.slack.SlackNotifier
 import hudson.util.Secret
 
-mySecret = Secret.fromString ('0nIpuQNhF3LP6J5BJIJ6GeMX')
+env = System.getenv()
+slackSecretValue = env['SLACK_SECRET']
+slackSecretDescription = env['SLACK_DESCRIPTION']
+
+mySecret = Secret.fromString (slackSecretValue)
 secretId = 'slackSecret'
 slackDomain = 'globant'
 
-secretText = new StringCredentialsImpl(CredentialsScope.GLOBAL, secretId, 'secret to slack', mySecret)
+secretText = new StringCredentialsImpl(CredentialsScope.GLOBAL, secretId, slackSecretDescription, mySecret)
 SystemCredentialsProvider.instance.store.addCredentials(Domain.global(), secretText)
 
 slackBuilder = SlackNotifier.builder()
