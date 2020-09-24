@@ -1,12 +1,12 @@
 import jenkins.*
-import jenkins.model.*
+import jenkins.model.Jenkins
 import hudson.model.*
 import jenkins.model.Jenkins
 import org.jenkinsci.plugins.authorizeproject.*
 import org.jenkinsci.plugins.authorizeproject.strategy.*
 import jenkins.security.QueueItemAuthenticatorConfiguration
 
-def instance = Jenkins.getInstance()
+instance = Jenkins.instance
 
 // Define which strategies you want to allow to be set per project
 def strategyMap = [
