@@ -2,6 +2,7 @@ import jenkins.model.Jenkins
 import hudson.security.GlobalMatrixAuthorizationStrategy
 import hudson.security.HudsonPrivateSecurityRealm
 import jenkins.security.s2m.AdminWhitelistRule
+import jenkins.model.JenkinsLocationConfiguration
 
 env = System.getenv()
 
