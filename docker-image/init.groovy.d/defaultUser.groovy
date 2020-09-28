@@ -18,7 +18,7 @@ if (!(jenkins.authorizationStrategy.class.isAssignableFrom(GlobalMatrixAuthoriza
 
 // slave to master access control
 Jenkins.instance.injector.getInstance(AdminWhitelistRule)
-masterKillSwitch = false
+.masterKillSwitch = false
 
 // Load Jenkins root URL
 jlc = JenkinsLocationConfiguration.get()
